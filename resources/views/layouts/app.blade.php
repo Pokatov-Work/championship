@@ -60,8 +60,8 @@
         <h3 class="u-custom-font u-font-open-sans u-headline u-text u-text-body-alt-color u-text-1">
             <a href="/">Liga-Game</a>
         </h3>
-        <a href="https://nicepage.me" class="u-border-2 u-border-palette-1-dark-3 u-btn u-btn-round u-button-style u-hover-palette-1-dark-3 u-none u-radius-13 u-text-hover-grey-50 u-text-white u-btn-1">Регистрация</a>
-        <a href="https://nicepage.me" class="u-border-active-palette-2-base u-border-hover-palette-1-base u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-dark-3 u-palette-1-dark-2 u-radius-12 u-text-body-alt-color u-text-hover-grey-50 u-btn-2">Войти</a>
+        <a href="/" class="u-border-2 u-border-palette-1-dark-3 u-btn u-btn-round u-button-style u-hover-palette-1-dark-3 u-none u-radius-13 u-text-hover-grey-50 u-text-white u-btn-1">Регистрация</a>
+        <a href="/" class="u-border-active-palette-2-base u-border-hover-palette-1-base u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-dark-3 u-palette-1-dark-2 u-radius-12 u-text-body-alt-color u-text-hover-grey-50 u-btn-2">Войти</a>
     </div></header>
 
 @yield('content')

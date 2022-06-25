@@ -12,7 +12,7 @@
                     </a>
                 </li>
                 <li class="u-tab-item u-tab-item-2" role="presentation">
-                    <a class="u-active-grey-60 u-button-style u-grey-10 u-tab-link u-text-active-white u-text-body-color u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false"><span class="u-file-icon u-icon"><img src="/img/counter-strike-logo.png" alt=""></span>&nbsp;Specifications
+                    <a class="u-active-grey-60 u-button-style u-grey-10 u-tab-link u-text-active-white u-text-body-color u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false"><span class="u-file-icon u-icon"><img src="/img/counter-strike-logo.png" alt=""></span>&nbsp;CS-GO
                     </a>
                 </li>
                 <li class="u-tab-item" role="presentation">
@@ -63,10 +63,10 @@
                                     <td class="u-table-cell">120$</td>
                                 </tr>
                                 <tr style="height: 45px;">
-                                    <td class="u-table-cell"></td>
-                                    <td class="u-table-cell"></td>
-                                    <td class="u-table-cell"></td>
-                                    <td class="u-table-cell"></td>
+                                    <td class="u-table-cell">NTurs</td>
+                                    <td class="u-table-cell">25.06.2022</td>
+                                    <td class="u-table-cell">852</td>
+                                    <td class="u-table-cell">800$</td>
                                 </tr>
                                 <tr style="height: 45px;">
                                     <td class="u-table-cell"></td>
@@ -124,7 +124,7 @@
                                     <td class="u-table-cell">Row 3</td>
                                     <td class="u-table-cell"> 27.04.2022</td>
                                     <td class="u-table-cell">35</td>
-                                    <td class="u-table-cell">-</td>
+                                    <td class="u-table-cell">5$</td>
                                 </tr>
                                 <tr style="height: 45px;">
                                     <td class="u-table-cell">Row 4</td>

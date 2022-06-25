@@ -5,19 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Tournament extends Model
+class Game extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-      'game_id',
-      'name',
-      'date_start',
-      'player',
-      'prize_fund',
+      'name'
     ];
 
-    public function games(){
-        $this->belongsTo(Game::class);
+    public function tournaments(){
+        $this->hasMany(Tournament::class)->orderBy('created_at');
     }
 }
