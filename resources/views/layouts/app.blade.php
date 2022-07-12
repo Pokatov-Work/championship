@@ -6,7 +6,7 @@
     <meta name="keywords" content="Creative Portfolio, i am designer, webuilddigital, We design People Inspired Experiences that create positive change in people&amp;apos;s lives., Visual communication for brands and people">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Liga-Game</title>
+    <title>@yield('title')</title>
     <link rel="stylesheet" href="/css/nicepage.css" media="screen">
     <link rel="stylesheet" href="/css/app.css" media="screen">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">

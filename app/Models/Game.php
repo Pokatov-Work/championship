@@ -10,7 +10,8 @@ class Game extends Model
     use HasFactory;
 
     protected $fillable = [
-      'name'
+        'img',
+        'name'
     ];
 
     public function tournaments(){

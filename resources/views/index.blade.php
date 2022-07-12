@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Liga-Game')
 @section('content')
 <section class="u-clearfix u-image u-shading u-section-1" id="sec-d73d" data-image-width="1920" data-image-height="1080">
     <div class="u-clearfix u-sheet u-sheet-1">
@@ -7,21 +7,30 @@
         <h2 class="u-align-center u-subtitle u-text u-text-2"> Все турниры по PUBG, DOTA-2 и CSGO. Список всех будущих и прошедших турниров, расписание турниров и матчей </h2>
         <div class="u-expanded-width u-tab-links-align-left u-tabs u-tabs-1">
             <ul class="u-border-2 u-border-palette-1-base u-spacing-10 u-tab-list u-unstyled" role="tablist">
-                <li class="u-tab-item u-tab-item-1" role="presentation">
-                    <a class="active u-active-grey-60 u-button-style u-grey-10 u-tab-link u-text-active-white u-text-body-color u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true"><span class="u-file-icon u-icon"><img src="/img/dota-2.png" alt=""></span>&nbsp;DOTA-2&nbsp;
-                    </a>
-                </li>
-                <li class="u-tab-item u-tab-item-2" role="presentation">
-                    <a class="u-active-grey-60 u-button-style u-grey-10 u-tab-link u-text-active-white u-text-body-color u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false"><span class="u-file-icon u-icon"><img src="/img/counter-strike-logo.png" alt=""></span>&nbsp;CS-GO
-                    </a>
-                </li>
-                <li class="u-tab-item" role="presentation">
-                    <a class="u-active-grey-60 u-button-style u-grey-10 u-tab-link u-text-active-white u-text-body-color u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false"><span class="u-file-icon u-icon"><img src="/img/pubg.png" alt=""></span>&nbsp;PUBG
-                    </a>
-                </li>
+                @foreach($data as $key => $item)
+                    @if($key==1)
+                        <li class="u-tab-item u-tab-item-1" role="presentation">
+                            <a class="active u-active-grey-60 u-button-style u-grey-10 u-tab-link u-text-active-white u-text-body-color u-tab-link-{{$key}}" id="link-tab-0da{{$key}}" href="#tab-0da{{$key}}" role="tab" aria-controls="tab-0da{{$key}}" aria-selected="true">
+                                <span class="u-file-icon u-icon">
+                                    <img src="/{{$item['img']}}" alt="">
+                                </span>&nbsp;
+                                {{$item['name']}}
+                            </a>
+                        </li>
+                    @else
+                        <li class="u-tab-item u-tab-item-{{$key}}" role="presentation">
+                            <a class="u-active-grey-60 u-button-style u-grey-10 u-tab-link u-text-active-white u-text-body-color u-tab-link-{{$key}}" id="link-tab-0da{{$key}}" href="#tab-0da{{$key}}" role="tab" aria-controls="tab-0da{{$key}}" aria-selected="false">
+                            <span class="u-file-icon u-icon">
+                                <img src="/{{$item['img']}}" alt="">
+                            </span>&nbsp;
+                                {{$item['name']}}
+                            </a>
+                        </li>
+                    @endif
+                @endforeach
             </ul>
             <div class="u-tab-content">
-                <div class="u-container-style u-custom-color-5 u-tab-active u-tab-pane u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
+                <div class="u-container-style u-custom-color-5 u-tab-active u-tab-pane u-tab-pane-1" id="tab-0da1" role="tabpanel" aria-labelledby="link-tab-0da1">
                     <div class="u-container-layout u-container-layout-1">
                         <div class="u-table u-table-responsive u-table-1">
                             <table class="u-table-entity">
@@ -91,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="u-align-left u-container-style u-custom-color-5 u-tab-pane u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+                <div class="u-align-left u-container-style u-custom-color-5 u-tab-pane u-tab-pane-2" id="tab-0da2" role="tabpanel" aria-labelledby="link-tab-0da2">
                     <div class="u-container-layout u-container-layout-2">
                         <div class="u-table u-table-responsive u-table-2">
                             <table class="u-table-entity">
@@ -161,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="u-container-style u-custom-color-5 u-tab-pane u-tab-pane-3" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
+                <div class="u-container-style u-custom-color-5 u-tab-pane u-tab-pane-3" id="tab-0da3" role="tabpanel" aria-labelledby="link-tab-0da3">
                     <div class="u-container-layout u-container-layout-3">
                         <div class="u-table u-table-responsive u-table-3">
                             <table class="u-table-entity">

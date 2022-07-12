@@ -17,7 +17,20 @@ class Tournament extends Model
       'prize_fund',
     ];
 
-    public function games(){
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public static function getTournamentCategoryGame($id)
+    {
+        return self::select()
+            ->where('game_id',$id)
+            ->get()
+            ->toArray();
+    }
+
+    public function games()
+    {
         $this->belongsTo(Game::class);
     }
 }
