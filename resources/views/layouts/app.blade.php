@@ -19,7 +19,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "Liga-Game",
-		"logo": "../../public/img/role-playing-game.png"
+		"logo": "/img/role-playing-game.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Liga-Game">
@@ -34,24 +34,41 @@
             <div class="menu-collapse">
                 <a class="u-button-style u-custom-text-color u-nav-link" href="#">
                     <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8d2a"></use></svg>
-                    <svg class="u-svg-content" version="1.1" id="svg-8d2a" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-                        </g></svg>
+                    <svg class="u-svg-content" version="1.1" id="svg-8d2a" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g></svg>
                 </a>
             </div>
             <div class="u-custom-menu u-nav-container">
-                <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-white" href="/">Турниры</a>
-                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-white" href="#">Спонсоры</a>
-                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-white" href="#">Организаторы</a>
-                    </li></ul>
+                <ul class="u-nav u-unstyled">
+                    <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-text-white" href="/tournaments">Турниры</a>
+                        <div class="u-nav-popup">
+                            <ul class="u-h-spacing-21 u-nav u-unstyled u-v-spacing-9 u-nav-2">
+                                <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/dota-2">DOTA-2</a></li>
+                                <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/cs-go">CS-GO</a></li>
+                                <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/pubg">PUBG</a></li>
+                            </ul>
+                        </div>
+                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-white" href="/sponsors">Спонсоры</a>
+                    </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-white" href="/organizers">Организаторы</a></li>
+                </ul>
             </div>
             <div class="u-custom-menu u-nav-container-collapse">
                 <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
                     <div class="u-inner-container-layout u-sidenav-overflow">
                         <div class="u-menu-close"></div>
-                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Турниры</a>
-                            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Спонсоры</a>
-                            </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Организаторы</a>
-                            </li></ul>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/tournaments">Турниры</a>
+                                <div class="u-nav-popup">
+                                    <ul class="u-h-spacing-21 u-nav u-unstyled u-v-spacing-9 u-nav-4">
+                                        <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/dota-2">DOTA-2</a></li>
+                                        <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/cs-go">CS-GO</a></li>
+                                        <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/pubg">PUBG</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/sponsors">Спонсоры</a></li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/organizers">Организаторы</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
@@ -66,7 +83,7 @@
 
 @yield('content')
 
-<section class="u-align-center u-clearfix u-image u-shading u-section-2" data-image-width="1980" data-image-height="806" id="carousel_d86d">
+<section class="u-align-center u-clearfix u-image u-shading u-section-3" data-image-width="1980" data-image-height="806" id="carousel_d86d">
     <div class="u-align-left u-clearfix u-sheet u-sheet-1">
         <div class="u-social-icons u-spacing-10 u-social-icons-1">
             <a class="u-social-url" title="vk" target="_blank" href="https://vk.com/jon_pokatov"><span class="u-file-icon u-icon u-social-facebook u-social-icon u-text-white u-icon-1"><img src="/img/5.png" alt=""></span>
@@ -81,7 +98,6 @@
         <a href="https://nicepage.com/wysiwyg-html-editor" class="u-border-1 u-border-active-palette-2-base u-border-hover-palette-1-base u-btn u-button-style u-none u-text-grey-10 u-btn-2">Реклама</a>
     </div>
 </section>
-
 </body>
 </html>
 
