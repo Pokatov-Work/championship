@@ -26,4 +26,14 @@ class ContentController extends Controller
 //        dd($tournament);
         return view('index', ['data' => $tournament]);
     }
+
+    public function tournaments() {
+        $game = Game::all();
+
+        return view('tournaments', ['data' => $game]);
+    }
+
+    public function getPage($path='/') {
+        dd($path);
+    }
 }
