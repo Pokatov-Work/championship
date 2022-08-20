@@ -20,6 +20,7 @@ class CreateTournamentsTable extends Migration
             $table->date('date_start');
             $table->integer('player');
             $table->integer('prize_fund');
+            $table->string('image_path');
             $table->timestamps();
         });
     }

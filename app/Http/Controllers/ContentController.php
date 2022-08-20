@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
 use App\Models\Game;
@@ -13,18 +12,14 @@ class ContentController extends Controller
         $gamesCat = Game::all();
 
         foreach ($gamesCat as $game){
-            $tournament[$game->id] = [
+            $tournaments[$game->id] = [
                 'img' => $game->img,
                 'name' => $game->name,
-                'tournament' => Tournament::getTournamentCategoryGame($game->id),
+                'tournamentList' => Tournament::getTournamentCategoryGame($game->id),
             ];
         }
-//        echo "<pre>";
-//        print_r($tournament);
-//        echo "</pre>";
-//        die();
-//        dd($tournament);
-        return view('index', ['data' => $tournament]);
+
+        return view('index', ['data' => $tournaments]);
     }
 
     public function tournaments() {
@@ -34,6 +29,7 @@ class ContentController extends Controller
     }
 
     public function getPage($path='/') {
-        dd($path);
+//        dd($path);
+        return view('dota-2');
     }
 }

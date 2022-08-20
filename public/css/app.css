@@ -751,7 +751,7 @@
 
 /*-- Dota-2 --*/
 .d-u-section-1 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/dota-fon.jpeg");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/dota-fon.jpeg");
     background-position: 50% 50%;
 }
 
@@ -781,7 +781,7 @@
 }
 
 .d-u-section-1 .u-image-1 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/fon2.jpg");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../img/fon2.jpg");
     background-position: 50% 50%;
 }
 
@@ -800,7 +800,7 @@
 }
 
 .d-u-section-1 .u-image-2 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/tip.png");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../img/tip.png");
     background-position: 50% 50%;
 }
 
