@@ -15,6 +15,6 @@ class Game extends Model
     ];
 
     public function tournaments(){
-        $this->hasMany(Tournament::class)->orderBy('created_at');
+       return $this->hasMany(Tournament::class)->orderBy('created_at');
     }
 }

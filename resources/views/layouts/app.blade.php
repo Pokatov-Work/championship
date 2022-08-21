@@ -43,9 +43,9 @@
                         <a class="u-button-style u-nav-link u-text-white" href="/tournaments">Турниры</a>
                         <div class="u-nav-popup">
                             <ul class="u-h-spacing-21 u-nav u-unstyled u-v-spacing-9 u-nav-2">
-                                <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/dota-2">DOTA-2</a></li>
-                                <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/cs-go">CS-GO</a></li>
-                                <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/pubg">PUBG</a></li>
+                                <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/tournaments/dota-2">DOTA-2</a></li>
+                                <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/tournaments/cs-go">CS-GO</a></li>
+                                <li class="u-nav-item"><a class="u-button-style u-custom-color-4 u-hover-custom-color-3 u-nav-link" href="/tournaments/pubg">PUBG</a></li>
                             </ul>
                         </div>
                     </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-white" href="/sponsors">Спонсоры</a>
