@@ -29,7 +29,8 @@ class ContentController extends Controller
     }
 
     public function getPage($path='/') {
-//        dd($path);
-        return view('dota-2');
+        $pageData = Game::find(1)->tournaments;
+
+        return view('detail', ['data' => $pageData]);
     }
 }
