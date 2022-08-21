@@ -29,8 +29,13 @@ class ContentController extends Controller
     }
 
     public function getPage($path='/') {
-        $pageData = Game::find(1)->tournaments;
+        $page = Game::where('name', $path)->first();
 
-        return view('detail', ['data' => $pageData]);
+        $pageData = Game::find($page->id)->tournaments;
+//dd($pageData);
+        return view('detail', [
+            'page' => $page,
+            'data' => $pageData
+            ]);
     }
 }
