@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::prefix('v1')->group(function () {
+
+    Route::post('/import/tournament', [App\Http\Controllers\Api\ImportTournamentController::class, 'getImportSave']);
+
+    Route::get('/import/tournament-update', [App\Http\Controllers\Api\ImportTournamentController::class, 'getImportUpdate']);
+});
